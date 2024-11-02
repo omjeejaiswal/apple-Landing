@@ -1,3 +1,4 @@
+
 html,body{
     width: 100%;
     height: 100%;
@@ -7,4 +8,50 @@ html,body{
     width: 100%;
     height: 100%;
     background-color: black;
+}  
+
+.masked {
+    position: relative;
+    background: url(https://i.pinimg.com/474x/2a/48/47/2a4847f83cf0d1aeabea417f528d1b7a.jpg) no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+
+}
+
+.masked::before {
+    content: "macbook pro.";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.pinimg.com/474x/2a/48/47/2a4847f83cf0d1aeabea417f528d1b7a.jpg) no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    filter: blur(40px);
+    opacity: 0.8;
+}
+
+.masked::after {
+    content: "macbook pro.";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.pinimg.com/474x/2a/48/47/2a4847f83cf0d1aeabea417f528d1b7a.jpg) no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    filter: blur(20px);
+    opacity: 0.8;
+}
+
+.line{
+    border-bottom: 1px solid #fff;
 }
